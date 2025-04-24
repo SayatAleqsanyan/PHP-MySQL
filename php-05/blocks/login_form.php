@@ -6,7 +6,6 @@ $remembered_password = '';
 
 if (isset($_COOKIE['remember_email']) && isset($_COOKIE['remember_password'])) {
     $remembered_email = $_COOKIE['remember_email'];
-    // The password is stored encrypted, we'll decrypt it
     $remembered_password = base64_decode($_COOKIE['remember_password']);
 }
 

@@ -7,7 +7,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-phpMyAdmin
+0-phpMyAdmin
 
 node_modules
 dist

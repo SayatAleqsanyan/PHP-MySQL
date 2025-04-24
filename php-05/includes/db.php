@@ -6,7 +6,6 @@ function getDbConnection() {
         die("Connection failed: " . mysqli_connect_error());
     }
 
-    // Set charset to utf8mb4
     mysqli_set_charset($db, "utf8mb4");
 
     return $db;
@@ -34,6 +33,5 @@ function createUsersTableIfNotExists() {
     mysqli_close($db);
 }
 
-// Call this function to ensure the table exists
 createUsersTableIfNotExists();
 ?>
